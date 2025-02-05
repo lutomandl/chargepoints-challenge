@@ -1,0 +1,11 @@
+export const MIN_CHARGE_POINTS = 1;
+export const MAX_CHARGE_POINTS = 200;
+export const DEFAULT_CHARGE_POINTS = 20;
+export const MIN_ARRIVAL_PROBABILITY = 20;
+export const MAX_ARRIVAL_PROBABILITY = 200;
+export const DEFAULT_ARRIVAL_PROBABILITY = 100;
+export const MIN_CAR_CONSUMPTION = 1;
+export const MAX_CAR_CONSUMPTION = 100;
+export const DEFAULT_CAR_CONSUMPTION = 18;
+export const DEFAULT_CHARGING_POWER = 11;
+export const CHARGING_POWER_OPTIONS = [11, 22, 50];
