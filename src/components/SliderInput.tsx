@@ -25,7 +25,7 @@ export default function SliderInput({
   const value = watch(name) || 0;
 
   return (
-    <div className="flex flex-col gap-2 w-full md:w-96">
+    <div className="flex flex-col items-start gap-2 w-full md:w-96">
       <label htmlFor={name}>{label}</label>
       <div className="flex justify-between items-center w-full text-sm text-gray-600 mb-1">
         <span>
