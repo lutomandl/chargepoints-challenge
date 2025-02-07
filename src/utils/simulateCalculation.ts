@@ -1,4 +1,4 @@
-import { CalculationData, FormInputs } from '../types/types.ts';
+import { CalculationData, FormInputs } from '../types';
 
 export default function generateCalculationData(
   params: FormInputs

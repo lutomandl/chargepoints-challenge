@@ -1,7 +1,8 @@
+import { Dispatch, SetStateAction, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import NumberInput from './NumberInput.tsx';
-import { CalculationData, FormInputs } from '../types/types.ts';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { NumberInput, SliderInput, RadioInput } from '.';
+import { CalculationData, FormInputs } from '../types';
 import {
   CHARGING_POWER_OPTIONS,
   DEFAULT_ARRIVAL_PROBABILITY,
@@ -14,14 +15,11 @@ import {
   MIN_ARRIVAL_PROBABILITY,
   MIN_CAR_CONSUMPTION,
   MIN_CHARGE_POINTS,
-} from '../utils/constants.ts';
-import SliderInput from './SliderInput.tsx';
-import RadioInput from './RadioInput.tsx';
-import { Dispatch, SetStateAction, useState } from 'react';
-import loader from '../assets/loader.svg';
-import { inputFormSchema } from '../utils/formSchema.ts';
-import generateCalculationData from '../utils/simulateCalculation.ts';
+  inputFormSchema,
+  generateCalculationData,
+} from '../utils';
 import ev from '../assets/ev-graphic.svg';
+import loader from '../assets/loader.svg';
 
 interface InputFormProps {
   setCalculationResults: Dispatch<SetStateAction<CalculationData | null>>;

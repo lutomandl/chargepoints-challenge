@@ -7,7 +7,7 @@ import {
   MIN_ARRIVAL_PROBABILITY,
   MIN_CAR_CONSUMPTION,
   MIN_CHARGE_POINTS,
-} from './constants.ts';
+} from '.';
 
 export const inputFormSchema = yup.object().shape({
   chargePoints: yup

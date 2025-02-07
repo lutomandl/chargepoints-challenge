@@ -6,8 +6,8 @@ import {
 } from 'react-hook-form';
 import plus from '../assets/plus.svg';
 import minus from '../assets/minus.svg';
-import { FormInputs } from '../types/types.ts';
-import { MAX_CHARGE_POINTS, MIN_CHARGE_POINTS } from '../utils/constants.ts';
+import { FormInputs } from '../types';
+import { MAX_CHARGE_POINTS, MIN_CHARGE_POINTS } from '../utils';
 
 interface NumberInputProps {
   label: string;

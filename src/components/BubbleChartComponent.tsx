@@ -7,7 +7,7 @@ import {
   YAxis,
   ZAxis,
 } from 'recharts';
-import { BubbleChartData } from '../types/types.ts';
+import { BubbleChartData } from '../types';
 
 interface BubbleChartComponentProps {
   data: BubbleChartData;

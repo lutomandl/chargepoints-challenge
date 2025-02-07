@@ -1,8 +1,7 @@
-import './App.css';
-import InputsForm from './components/InputsForm.tsx';
 import { useState } from 'react';
-import OutputView from './components/OutputView.tsx';
-import { CalculationData } from './types/types.ts';
+import './App.css';
+import { InputsForm, OutputView } from './components';
+import { CalculationData } from './types';
 
 export default function App() {
   const [calculationResults, setCalculationResults] =

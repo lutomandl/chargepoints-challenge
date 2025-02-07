@@ -7,7 +7,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-import { BarChartData } from '../types/types.ts';
+import { BarChartData } from '../types';
 
 interface BarChartComponentProps {
   data: BarChartData;
