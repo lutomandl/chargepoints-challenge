@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import {
+  CHARGING_POWER_OPTIONS,
   MAX_ARRIVAL_PROBABILITY,
   MAX_CAR_CONSUMPTION,
   MAX_CHARGE_POINTS,
@@ -34,6 +35,6 @@ export const inputFormSchema = yup.object().shape({
 
   chargingPower: yup
     .number()
-    .oneOf([11, 22, 50], 'Invalid charging power')
+    .oneOf(CHARGING_POWER_OPTIONS, 'Invalid charging power')
     .required('Charging power is required'),
 });

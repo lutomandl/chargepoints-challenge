@@ -1,5 +1,5 @@
 import { UseFormSetValue, UseFormWatch } from 'react-hook-form';
-import { FormInputs } from '../types/InputTypes';
+import { FormInputs } from '../types/types';
 
 interface RadioInputProps {
   name: keyof FormInputs;
@@ -19,26 +19,21 @@ export default function RadioInput({
   const value = watch(name) || 0;
 
   return (
-    <div className="flex flex-col gap-2 max-w-96">
-      <label
-        htmlFor={name}
-        className="flex gap-2 text-gray-600 text-lg font-bold"
-      >
-        {label}
-      </label>
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col items-start gap-2 w-full md:w-96">
+      <label htmlFor={name}>{label}</label>
+      <div className="flex flex-col gap-2 items-start">
         {options.map((option) => (
-          <label key={option.value} className="flex items-center gap-2">
+          <div key={option.value} className="flex items-center gap-2">
             <input
               type="radio"
               id={option.value.toString()}
               checked={value === option.value}
               onChange={() => setValue(name, option.value)}
               value={option.value}
-              className="mr-2"
+              className="font-normal"
             />
-            {option.label}
-          </label>
+            <span className="text-lg">{option.label}</span>
+          </div>
         ))}
       </div>
     </div>

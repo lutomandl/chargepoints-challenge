@@ -1,7 +1,27 @@
 @import 'tailwindcss';
 
 #root {
-  @apply p-4 flex flex-col items-center;
+  @apply m-6 lg:m-12 flex flex-col items-center text-center;
+}
+
+h1 {
+  @apply text-4xl font-bold text-gray-900;
+}
+
+h2 {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+h3 {
+  @apply text-xl font-bold text-gray-900;
+}
+
+label {
+  @apply text-lg font-bold text-gray-600;
+}
+
+button {
+  @apply bg-blue-500 hover:bg-blue-900 text-white font-bold  rounded-lg p-3 h-11 focus:ring-blue-400 focus:ring-2 focus:outline-none flex items-center justify-center cursor-pointer;
 }
 
 input[type='number']::-webkit-inner-spin-button,

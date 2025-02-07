@@ -1,5 +1,5 @@
 import { UseFormRegister, UseFormWatch } from 'react-hook-form';
-import { FormInputs } from '../types/InputTypes';
+import { FormInputs } from '../types/types';
 
 interface SliderInputPorps {
   label: string;
@@ -25,18 +25,13 @@ export default function SliderInput({
   const value = watch(name) || 0;
 
   return (
-    <div className="flex flex-col gap-2 max-w-96">
-      <label
-        htmlFor={name}
-        className="flex gap-2 text-gray-600 text-lg font-bold"
-      >
-        {label}
-      </label>
-      <div className="flex justify-between max-w-96 text-sm text-gray-600 mb-1">
+    <div className="flex flex-col gap-2 w-full md:w-96">
+      <label htmlFor={name}>{label}</label>
+      <div className="flex justify-between items-center w-full text-sm text-gray-600 mb-1">
         <span>
           {min} {unit ?? ''}
         </span>
-        <span>
+        <span className="text-lg">
           {value} {unit ?? ''}
         </span>
         <span>
@@ -50,7 +45,7 @@ export default function SliderInput({
         max={max}
         step={step}
         {...register(name)}
-        className="max-w-96 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
       />
     </div>
   );
