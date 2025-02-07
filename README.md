@@ -2,6 +2,8 @@
 
 This project is a solution to the Chargepoints Challenge. It provides an input form and a couple of visualized output data.
 
+Published at: [http://chargepoints-challenge.netlify.app](http://chargepoints-challenge.netlify.app)
+
 ![Screenshot of the application](public/screenshot.png)
 
 ## Installation
