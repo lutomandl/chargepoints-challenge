@@ -1,5 +1,5 @@
 import { UseFormSetValue, UseFormWatch } from 'react-hook-form';
-import { FormInputs } from '../types/types';
+import { FormInputs } from '../types/types.ts';
 
 interface RadioInputProps {
   name: keyof FormInputs;

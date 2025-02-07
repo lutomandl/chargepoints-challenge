@@ -1,5 +1,5 @@
 import { UseFormRegister, UseFormWatch } from 'react-hook-form';
-import { FormInputs } from '../types/types';
+import { FormInputs } from '../types/types.ts';
 
 interface SliderInputPorps {
   label: string;

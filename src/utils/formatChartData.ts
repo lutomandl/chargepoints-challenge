@@ -1,4 +1,8 @@
-import { BarChartData, BubbleChartData, CalculationData } from '../types/types';
+import {
+  BarChartData,
+  BubbleChartData,
+  CalculationData,
+} from '../types/types.ts';
 
 export const formatPowerByHours = (data: CalculationData): BarChartData => {
   return data.timeSeries.map(({ hour, power }) => ({

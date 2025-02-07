@@ -1,6 +1,6 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
-import NumberInput from './NumberInput';
-import { CalculationData, FormInputs } from '../types/types';
+import NumberInput from './NumberInput.tsx';
+import { CalculationData, FormInputs } from '../types/types.ts';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
   CHARGING_POWER_OPTIONS,
@@ -14,13 +14,13 @@ import {
   MIN_ARRIVAL_PROBABILITY,
   MIN_CAR_CONSUMPTION,
   MIN_CHARGE_POINTS,
-} from '../utils/constants';
-import SliderInput from './SliderInput';
-import RadioInput from './RadioInput';
+} from '../utils/constants.ts';
+import SliderInput from './SliderInput.tsx';
+import RadioInput from './RadioInput.tsx';
 import { Dispatch, SetStateAction, useState } from 'react';
 import loader from '../assets/loader.svg';
-import { inputFormSchema } from '../utils/inputSchema';
-import generateCalculationData from '../utils/simulateCalculation';
+import { inputFormSchema } from '../utils/inputSchema.ts';
+import generateCalculationData from '../utils/simulateCalculation.ts';
 import ev from '../assets/ev-graphic.svg';
 
 interface InputFormProps {

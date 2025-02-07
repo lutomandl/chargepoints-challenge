@@ -1,16 +1,16 @@
-import { CalculationData } from '../types/types';
-import StatisticsCard from './StatisticsCard';
+import { CalculationData } from '../types/types.ts';
+import StatisticsCard from './StatisticsCard.tsx';
 import refresh from '../assets/refresh.svg';
 import {
   formatEnergyByHours,
   formatMaxUsageByPoints,
   formatPowerByHours,
   formatUsagePerPointPerHour,
-} from '../utils/formatChartData';
-import BarChartComponent from './BarChartComponent';
-import BubbleChartComponent from './BubbleChartComponent';
+} from '../utils/formatChartData.ts';
+import BarChartComponent from './BarChartComponent.tsx';
+import BubbleChartComponent from './BubbleChartComponent.tsx';
 import ev from '../assets/ev-graphic2.svg';
-import ChartWrapper from './ChartWrapper';
+import ChartWrapper from './ChartWrapper.tsx';
 
 interface OutputViewProps {
   resetCalculation: () => void;

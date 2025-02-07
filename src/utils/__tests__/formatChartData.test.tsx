@@ -3,8 +3,8 @@ import {
   formatEnergyByHours,
   formatMaxUsageByPoints,
   formatUsagePerPointPerHour,
-} from '../formatChartData';
-import { CalculationData } from '../../types/types';
+} from '../formatChartData.ts';
+import { CalculationData } from '../../types/types.ts';
 
 describe('formatChartData', () => {
   const mockData: CalculationData = {
