@@ -29,3 +29,13 @@ npm run build
 ```sh
 npm run test
 ```
+
+## Technologies
+
+The application is build using React and TypeScript. It uses the following libraries:
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/) for some basic unit tests.
+- [Tailwind CSS](https://tailwindcss.com/) for styling.
+- [Recharts](https://www.recharts.org/) for the charts.
