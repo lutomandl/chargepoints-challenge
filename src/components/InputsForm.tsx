@@ -19,7 +19,7 @@ import SliderInput from './SliderInput.tsx';
 import RadioInput from './RadioInput.tsx';
 import { Dispatch, SetStateAction, useState } from 'react';
 import loader from '../assets/loader.svg';
-import { inputFormSchema } from '../utils/inputSchema.ts';
+import { inputFormSchema } from '../utils/formSchema.ts';
 import generateCalculationData from '../utils/simulateCalculation.ts';
 import ev from '../assets/ev-graphic.svg';
 
