@@ -56,7 +56,7 @@ export default function OutputView({
           unit="events"
         />
       </section>
-      <section className="flex flex-col gap-8 w-full">
+      <section className="flex flex-col items-center gap-8 w-full">
         <ChartWrapper title="Power by hours">
           <BarChartComponent
             data={formatPowerByHours(calculationResults)}
