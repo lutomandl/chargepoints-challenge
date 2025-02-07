@@ -40,4 +40,10 @@ The application is build using React and TypeScript. It uses the following libra
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/) for some basic unit tests.
 - [Tailwind CSS](https://tailwindcss.com/) for styling.
+- [React Hook Form](https://react-hook-form.com/) for the form handling.
+- [Yup](https://github.com/jquense/yup) for the form validation.
 - [Recharts](https://www.recharts.org/) for the charts.
+
+## Notes
+
+The data is being generated randomly on the client side and is not precise.
