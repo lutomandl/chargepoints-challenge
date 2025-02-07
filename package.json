@@ -17,7 +17,8 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.2",
     "recharts": "^2.15.1",
-    "yup": "^1.6.1"
+    "yup": "^1.6.1",
+    "@rollup/rollup-linux-x64-gnu": "^4.9.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -38,8 +39,5 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
-  },
-  "resolutions": {
-    "rollup": "npm:@rollup/wasm-node"
   }
 }
