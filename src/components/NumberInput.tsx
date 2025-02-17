@@ -44,7 +44,7 @@ export default function NumberInput({
     <div className="flex flex-col items-start gap-2 w-full md:w-96">
       <label htmlFor={name}>{label}</label>
       <div className="relative flex items-center gap-0.5 w-full">
-        <button onClick={handleDecrement}>
+        <button type="button" onClick={handleDecrement}>
           <img src={minus} alt="minus" />
         </button>
         <input
@@ -57,7 +57,7 @@ export default function NumberInput({
             valueAsNumber: true,
           })}
         />
-        <button onClick={handleIncrement}>
+        <button type="button" onClick={handleIncrement}>
           <img src={plus} alt="plus" />
         </button>
       </div>
